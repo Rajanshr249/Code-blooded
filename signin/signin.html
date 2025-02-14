@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="sign.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="signin-container">
+        <div class="signin-header">
+            <h1>Sign In</h1>
+            <p>Choose your preferred sign-in method</p>
+        </div>
+        <form id="signin-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="divider"><span>or</span></div>
+        <button class="social-signin-btn facebook">
+            <div class="social-btn-content">
+                <i class="fab fa-facebook-f"></i>
+                <span>Continue with Facebook</span>
+            </div>
+        </button>
+        <button class="social-signin-btn google">
+            <div class="social-btn-content">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" 
+                     alt="Google Logo" class="google-logo">
+                <span>Continue with Google</span>
+            </div>
+        </button>
+        <button class="social-signin-btn linkedin">
+            <div class="social-btn-content">
+                <i class="fab fa-linkedin-in"></i>
+                <span>Continue with LinkedIn</span>
+            </div>
+        </button>
+        <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script src="sign.js"></script> 
+</body>
+</html>
