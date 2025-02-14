@@ -24,6 +24,9 @@ body {
     align-items: center;
     gap: 1rem;
 }
+.auth-links a {
+    margin-right: 20px; /* Adjust as needed */
+}
 .dropdown {
     position: relative;
 }
@@ -56,6 +59,17 @@ body {
 }
 .dropdown-content {
     display: block;
+}
+.signup-button {
+    background-color: #007bff; 
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.signup-button:hover {
+    background-color: #0056b3; 
 }
 .hero {
     display: flex;

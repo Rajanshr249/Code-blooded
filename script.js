@@ -20,3 +20,4 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
         dropdown.querySelector('.dropdown-content').style.display = 'none';
     });
 });
+
