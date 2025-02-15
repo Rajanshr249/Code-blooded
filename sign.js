@@ -5,7 +5,6 @@ document.getElementById("signin-form").addEventListener("submit", function(event
     if (email === "" || password === "") {
         alert("Please enter both email and password.");
     } else {
-        window.location.href = "home.html";
+        window.location.href = "home2.html";
     }
 });
-
