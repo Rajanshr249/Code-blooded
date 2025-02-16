@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="templates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="templates">
+            <h3>Select Template</h3>
+            <button onclick="changeTemplate('modern')">Modern</button>
+            <button onclick="changeTemplate('professional')">Professional</button>
+            <button onclick="changeTemplate('creative')">Creative</button>
+            <button onclick="changeTemplate('minimal')">Minimal</button>
+            <button onclick="changeTemplate('executive')">Executive</button>
+            <button onclick="changeTemplate('elegant')">Elegant</button>
+            <button onclick="changeTemplate('bold')">Bold</button>
+            <button onclick="changeTemplate('compact')">Compact</button>
+        </aside>
+        
+        <main class="resume-container">
+            <div id="resume" class="resume modern">
+            </div>
+        </main>
+    </div>
+
+    <script src="templates.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="templates">
+            <h3>Select Template</h3>
+            <button onclick="changeTemplate('modern')">Modern Clean</button>
+            <button onclick="changeTemplate('professional')">Professional</button>
+            <button onclick="changeTemplate('creative')">Creative</button>
+            <button onclick="changeTemplate('minimal')">Minimal</button>
+            <button onclick="changeTemplate('executive')">Executive</button>
+            <button onclick="changeTemplate('elegant')">Elegant</button>
+            <button onclick="changeTemplate('bold')">Bold</button>
+            <button onclick="changeTemplate('compact')">Compact</button>
+        </aside>
+        
+        <main class="resume-container">
+            <div id="resume" class="resume modern">
+            </div>
+            <div class="template-controls">
+                <button id="download-pdf" onclick="downloadPDF()">Download PDF</button>
+                <button onclick="editTemplate()">Customize Template</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="preview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</body>
+</html>

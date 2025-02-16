@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Forge</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Your Details</h2>
+        <form id="resume-form">
+            <div id="step1">
+                <div class="input-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="education">Education:</label>
+                    <textarea id="education" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" placeholder="Type a skill..." required>
+                </div>
+
+                <button type="button" id="next-btn" onclick="nextStep()">Next</button>
+            </div>
+
+            <div id="step2" style="display: none;">
+                <div class="input-group">
+                    <label for="summary">Personal Summary:</label>
+                    <textarea id="summary" required placeholder="Auto-generated based on your Personal Description..."></textarea>
+                    <button type="button" onclick="generateSummary()">Generate Summary</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="jobs">Job Title:</label>
+                    <input type="text" id="jobs" required placeholder="Enter your job title">
+                </div>
+
+                <div class="input-group">
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" required placeholder="Enter your Company">
+                </div>
+
+                <div class="input-group">
+                    <label for="job-description">Job Description:</label>
+                    <textarea id="job-description" required placeholder="Auto-generated job description..."></textarea>
+                    <button type="button" onclick="generateJobDescription()">Generate Job Description</button>
+                </div>
+
+                <button type="button" id="prev-btn" onclick="prevStep()">Previous</button>
+                <button type="button" id="submit-btn" onclick="submitResume()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>

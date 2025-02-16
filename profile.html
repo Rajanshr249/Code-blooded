@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page | Dashboard</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" onclick="showContent('dashboard')">Dashboard</a></li>
+            <li><a href="#" onclick="showContent('profile')">Profile</a></li>
+            <li><a href="#" onclick="showContent('security')">Security</a></li>
+            <li><a href="#" onclick="showContent('premium')">Premium</a></li>
+            <li><button onclick="confirmSignOut()" class="signout-btn">Sign Out</button></li>
+        </ul>
+    </div>
+    
+    <div class="main-content" id="content">
+        <div id="dashboard" class="content-section" style="display: none;">
+            <h2>Dashboard</h2>
+            <p>Welcome to your dashboard! Here you can see an overview of your activities.</p>
+        </div>
+        
+        <div id="profile" class="content-section">
+            <h2>Profile</h2>
+            <p>Welcome to your profile page.</p>
+        </div>
+        
+        <div id="security" class="content-section" style="display: none;">
+            <h2>Security</h2>
+            <p>Manage your account security settings here.</p>
+        </div>
+        
+        <div id="premium" class="content-section" style="display: none;">
+            <h2>Premium</h2>
+            <p>Upgrade to premium for exclusive features and benefits.</p>
+        </div>
+    </div>
+    
+    <div id="signout-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p>Are you sure you want to sign out?</p>
+            <button onclick="signOut()">Yes</button>
+            <button onclick="closePopup()">No</button>
+        </div>
+    </div>
+    
+    <script src="profile.js"></script>
+</body>
+</html>

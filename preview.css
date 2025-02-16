@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.templates {
+    width: 20%;
+    background: #333;
+    padding: 20px;
+    color: white;
+}
+
+.templates h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.templates button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: #555;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.templates button:hover {
+    background: #777;
+}
+
+.resume-container {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.resume {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.template-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.template-controls button {
+    margin: 10px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.template-controls button:hover {
+    background: #0056b3;
+}
+
+.modern-template header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.modern-template h1 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.modern-template .contact-info p {
+    margin: 5px 0;
+}
+
+.modern-template section {
+    margin-top: 20px;
+}
+
+.modern-template h2 {
+    color: #007bff;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.professional-template {
+    border-left: 5px solid #007bff;
+    padding-left: 20px;
+}
+
+.professional-template .header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.professional-template .contact-grid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: gray;
+}
+
+.professional-template section {
+    margin-top: 15px;
+}
+
+.professional-template h2 {
+    color: #007bff;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.creative-template header {
+    background: #ff6b6b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.creative-template h1 {
+    font-size: 26px;
+}
+
+.creative-template section {
+    margin-top: 20px;
+}
+
+.creative-template h2 {
+    color: #ff6b6b;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.minimal-template {
+    text-align: center;
+}
+
+.minimal-template h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.minimal-template h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.executive-template {
+    font-family: 'Georgia', serif;
+    background: #f3f3f3;
+    padding: 25px;
+}
+
+.executive-template h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #222;
+}
+
+.executive-template p {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.executive-template h2 {
+    color: #222;
+    margin-top: 15px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
+}
+
+.elegant-template {
+    font-family: 'Times New Roman', serif;
+    padding: 20px;
+}
+
+.elegant-template h1 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.elegant-template h2 {
+    color: #8a2be2;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.bold-template {
+    font-weight: bold;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+.bold-template h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.bold-template h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.compact-template {
+    font-size: 14px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.compact-template h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.compact-template h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
